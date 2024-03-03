@@ -13,7 +13,9 @@ alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 ```
 
 ### Installation ###
+```
 sail up -d
 sail artisan migrate
 sail npm install && sail npm run dev
+```
 
