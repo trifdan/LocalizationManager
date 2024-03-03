@@ -25,6 +25,7 @@ class CreateLanguageRequest extends FormRequest
         return [
             'code_iso2.required' => 'A code_iso2 is required',
             'code_iso2.unique' => 'This code exists already',
+            'code_iso2.size' => 'The code size should be exactly 2',
             'name.required' => 'A language name is required'
         ];
     }
